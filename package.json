@@ -1,0 +1,20 @@
+{
+  "name": "autocomplete-awk",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "AWK functions and built-in variables autocompletions.",
+  "repository": "https://github.com/c-steiner/language-awk.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "providedServices": {
+      "autocomplete.provider": {
+          "versions": {
+              "2.0.0": "getProvider"
+          }
+      }
+  },
+  "dependencies": {
+  }
+}
