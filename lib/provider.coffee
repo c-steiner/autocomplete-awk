@@ -11,6 +11,7 @@ module.exports =
 
   getSuggestions: (request) ->
     completions = null
+    {prefix} = request
     scopes = request.scopeDescriptor.getScopesArray()
 
     if @isCompletingKeywordSelector(request)
