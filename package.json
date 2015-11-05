@@ -4,6 +4,10 @@
   "version": "0.1.0",
   "description": "AWK functions and built-in variables autocompletions.",
   "repository": "https://github.com/c-steiner/autocomplete-awk.git",
+  "keywords": [
+    "autocomplete",
+    "awk"
+  ],
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
