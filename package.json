@@ -3,7 +3,7 @@
   "main": "./lib/main",
   "version": "0.0.0",
   "description": "AWK functions and built-in variables autocompletions.",
-  "repository": "https://github.com/c-steiner/language-awk.git",
+  "repository": "https://github.com/c-steiner/autocomplete-awk.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
