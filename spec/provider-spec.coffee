@@ -22,6 +22,7 @@ describe "AutocompleteAwk", ->
 
   beforeEach ->
     waitsForPromise -> atom.packages.activatePackage('autocomplete-awk')
+    waitsForPromise -> atom.packages.activatePackage('language-awk')
 
     runs ->
       provider = atom.packages.getActivePackage('autocomplete-awk').mainModule.getProvider()
@@ -36,3 +37,15 @@ describe "AutocompleteAwk", ->
 
     editor.setText('B')
     expect(getCompletions().length).toBeGreaterThan(0)
+
+  it "returns no completions in comment", ->
+    editor.setText('# B')
+
+    editor.setCursorBufferPosition([0, 1])
+    expect(getCompletions().length).toBe 0
+
+  it "returns no completions in string", ->
+    editor.setText('"B"')
+
+    editor.setCursorBufferPosition([0, 1])
+    expect(getCompletions().length).toBe 0
