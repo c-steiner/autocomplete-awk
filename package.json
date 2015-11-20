@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-awk",
   "main": "./lib/main",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AWK functions and built-in variables autocompletions.",
   "repository": "https://github.com/c-steiner/autocomplete-awk.git",
   "keywords": [
