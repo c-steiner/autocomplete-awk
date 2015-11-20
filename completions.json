@@ -521,7 +521,7 @@
     },
     "sub": {
       "type": "function",
-      "snippet": "strtonum(${1:regexp}, ${2:replacement}, ${3:target})",
+      "snippet": "sub(${1:regexp}, ${2:replacement}, ${3:target})",
       "displayText": "sub(regexp, replacement[, target])",
       "leftLabel": "int",
       "description": "Search target, which is treated as a string, for the leftmost, longest substring matched by the regular expression regexp.",
